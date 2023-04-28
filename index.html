@@ -19,13 +19,13 @@
 <body>
     <!-- Top -->
     <div class="top__main">
-        <h1 class="top__title" id="top__title">Kosei</h1>
+        <h1 class="top__title" id="top__title">Kosei.</h1>
     </div>
     <!--  -->
 
     <!-- About Me -->
     <div class="about__main">
-        <h1 class="about__title">About Me</h1>
+        <h1 class="about__title">About</h1>
         <div class="about__coding">
             <h3 class="about__coding__parent">
                 <font color="#ffffe">.</font>about_me {
@@ -173,12 +173,12 @@
     <div class="contact__main">
         <div class="contact__cotent">
             <h1 class="contact__title">Contact</h1>
-            <form action="index.html">
+            <form action="index.html" autocomplete="off">
                 <h2 class="form__title">件名</h2>
-                <input type="text">
+                <input type="text" id="title">
                 <h2 class="form__title">内容</h2>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button>送信</button>
+                <textarea id="content" cols="30" rows="10"></textarea>
+                <div class="button" id="button">送信</div>
             </form>
         </div>
     </div>
@@ -188,16 +188,30 @@
     <div class="bottom__main">
         <div class="bottom__contents">
             <h2 class="bottom__subtitle">CONTENTS</h2>
+            <a href="#" class="bottom__links">>Home</a>
+            <a href="#" class="bottom__links">>About</a>
+            <a href="#" class="bottom__links">>Skills</a>
+            <a href="#" class="bottom__links">>Contact</a>
         </div>
         <div class="bottom__contents">
             <h2 class="bottom__subtitle">SNS</h2>
+            <a href="#" class="bottom__links">>Twitter</a>
+            <a href="#" class="bottom__links">>Github</a>
         </div>
         <div class="bottom__contents">
             <h2 class="bottom__subtitle">OPUS</h2>
+            <a href="#" class="bottom__links">>EFT TASKS</a>
+            <a href="#" class="bottom__links">>Portfolio2021</a>
         </div>
+    </div>
+
+    <div class="bottom__produced">
+        produced by Kosei
     </div>
     <!--  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script/mail_send.js"></script>
+    <script src="script/swiper_script.js"></script>
     <script src="script/main_script.js"></script>
 </body>
 
