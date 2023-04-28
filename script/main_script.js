@@ -1,6 +1,5 @@
 const swiper = new Swiper(".swiper", {
-    direction: "vertical" /* この行を追加 */,
-    // ページネーションが必要なら追加
+    direction: "vertical",
     pagination: {
         el: ".swiper-pagination"
     }
