@@ -48,6 +48,7 @@ h3 {
 }
 
 .top__title {
+    user-select: none;
     font-size: 60px;
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 100vh;
@@ -164,7 +165,6 @@ h3 {
 /* swiper */
 
 .swiper {
-    touch-action: pan-y;
     border-radius: 10px;
     cursor: grab;
 }
@@ -203,6 +203,33 @@ h3 {
 
 .swiper-slide:nth-child(3n + 3) {
     background-color: #fffffe;
+}
+
+.swiper__flex {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper__prev {
+    border-radius: 0 10px 0 0;
+    color: #b8c1ec;
+    background-color: #232946;
+    width: 60px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.swiper__next {
+    border-radius: 10px 0 0 0;
+    color: #b8c1ec;
+    background-color: #232946;
+    width: 60px;
+    height: auto;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -377,6 +404,7 @@ textarea {
 
 @media screen and (max-width:870px) {
     .swiper-wrapper {
+        pointer-events: none;
         height: 450px !important;
     }
 
