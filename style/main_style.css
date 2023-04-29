@@ -164,6 +164,7 @@ h3 {
 /* swiper */
 
 .swiper {
+    touch-action: pan-y;
     border-radius: 10px;
     cursor: grab;
 }
