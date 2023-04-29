@@ -1,6 +1,6 @@
 var title = ""
 var content = ""
-
+//
 document.getElementById('button').addEventListener('click', function () {
     title = document.getElementById('title').value;
     content = document.getElementById('content').value;
